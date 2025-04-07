@@ -1,62 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhijeet's Work Showcase</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      color: #333;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      color: #007acc;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.95rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>Hi! I'm Abhijeet Kumar, currently pursuing Data Science at IIT Madras. I'm passionate about programming, mathematics, and building impactful solutions.</p>
+<p id="contact-email" data-email="23f2004912@ds.study.iitm.ac.in">
+  Email: <span id="email-display"></span>
+</p>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Semantic Search API</strong> – FastAPI + LLM integration for intelligent search.</li>
-      <li><strong>DevSync</strong> – Automates GitHub repo sync using GitHub Actions.</li>
-      <li><strong>Household Services App</strong> – A Flask + VueJS project to manage services efficiently.</li>
-    </ul>
-
-    <footer>
-      <p id="contact-email" data-email="23f2004912@ds.study.iitm.ac.in">
-        Contact me at: <span id="email-display"></span>
-      </p>
-    </footer>
-  </div>
-
-  <script>
-    const email = document.getElementById("contact-email").getAttribute("data-email");
-    document.getElementById("email-display").textContent = email;
-  </script>
-</body>
-</html>
+<script>
+  const email = document.getElementById("contact-email").getAttribute("data-email");
+  document.getElementById("email-display").textContent = email;
+</script>
