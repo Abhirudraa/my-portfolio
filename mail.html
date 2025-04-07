@@ -3,52 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Work Showcase</title>
+  <title>Abhijeet's Work Showcase</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 2rem;
+      background: #f0f2f5;
       color: #333;
+      padding: 2rem;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
-      background: white;
+      background: #fff;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      color: #0066cc;
+      color: #007acc;
     }
     a {
-      color: #0066cc;
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       margin-top: 2rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome to My GitHub Page!</h1>
-    <p>Hello! I'm Abhijeet Kumar, a Data Science undergraduate at IIT Madras.</p>
-    <p>I am passionate about programming, statistics, and building useful tools using Python and modern web technologies.</p>
+    <p>Hi! I'm Abhijeet Kumar, currently pursuing Data Science at IIT Madras. I'm passionate about programming, mathematics, and building impactful solutions.</p>
 
-    <h2>Highlighted Projects</h2>
+    <h2>Projects</h2>
     <ul>
-      <li><strong>FastAPI Semantic Search API</strong> – LLM-based smart search interface.</li>
-      <li><strong>DevSync</strong> – Automated GitHub repo sync using Actions.</li>
-      <li><strong>Household Services App (V2)</strong> – VueJS + Flask project for managing services.</li>
+      <li><strong>Semantic Search API</strong> – FastAPI + LLM integration for intelligent search.</li>
+      <li><strong>DevSync</strong> – Automates GitHub repo sync using GitHub Actions.</li>
+      <li><strong>Household Services App</strong> – A Flask + VueJS project to manage services efficiently.</li>
     </ul>
 
     <footer>
-      <p>Contact me:  
-        <!--email_off-->23f2004912@ds.study.iitm.ac.in<!--/email_off-->
+      <p id="contact-email" data-email="23f2004912@ds.study.iitm.ac.in">
+        Contact me at: <span id="email-display"></span>
       </p>
     </footer>
   </div>
+
+  <script>
+    const email = document.getElementById("contact-email").getAttribute("data-email");
+    document.getElementById("email-display").textContent = email;
+  </script>
 </body>
 </html>
